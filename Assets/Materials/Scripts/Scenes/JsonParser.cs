@@ -6,13 +6,13 @@ public class JsonParser
 {
     private TextAsset jsonFile;
     private SceneInfo info;
-    private ReaderWriterLockSlim rwLock;
+    private ReaderWriterLockSlim rwLock = new ReaderWriterLockSlim();
 
     public JsonParser(String file)
     {
         // load json file from resources directory
         this.jsonFile = Resources.Load<TextAsset>(file);
-        if (this.jsonFile == null)
+        if (this.jsonFile != null)
         {
             Debug.Log("Parse json file " + file + " success");
         } else
@@ -23,6 +23,8 @@ public class JsonParser
 
     public void Parse()
     {
+        Debug.Log("Start parse");
+
         rwLock.EnterWriteLock();
         try
         {

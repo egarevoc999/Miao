@@ -1,0 +1,184 @@
+{
+    "self": {
+        "gamerId": 0,
+        "name": "CWaller",
+        "id": 350940069530604520,
+        "buildings": {
+            "Location(x=5, y=5)": {
+                "card": {
+                    "id": 0,
+                    "type": null,
+                    "needEnergy": 0,
+                    "name": null,
+                    "skill": null,
+                    "header": null,
+                    "level": null,
+                    "maxHealth": 0,
+                    "defend": 0,
+                    "needBuildingNum": 0,
+                    "maxCapacity": 3,
+                    "limitEnergy": 3
+                },
+                "schedule": 0,
+                "loc": {
+                    "x": 5,
+                    "y": 5
+                },
+                "owner": {
+                    "id": 0
+                },
+                "allCat": {
+                    "allCats": []
+                },
+                "remainCapacity": 3
+            }
+        },
+        "entities": {
+            "1": {
+                "id": 1,
+                "maxHealth": 100,
+                "heath": 100,
+                "loc": {
+                    "x": 0,
+                    "y": 3
+                },
+                "equipments": [],
+                "owner": {
+                    "id": 0
+                },
+                "maxAction": 0,
+                "nowAction": 0,
+                "seeDistance": 0
+            }
+        },
+        "incapacitatedEntities": {},
+        "energyNum": 0,
+        "cards": {},
+        "usedCard": {},
+        "baseNest": {
+            "card": {
+                "id": 0,
+                "type": null,
+                "needEnergy": 0,
+                "name": null,
+                "skill": null,
+                "header": null,
+                "level": null,
+                "maxHealth": 0,
+                "defend": 0,
+                "needBuildingNum": 0,
+                "maxCapacity": 3,
+                "limitEnergy": 3
+            },
+            "schedule": 0,
+            "loc": {
+                "x": 5,
+                "y": 5
+            },
+            "owner": {
+                "id": 0
+            },
+            "allCat": {
+                "allCats": []
+            },
+            "remainCapacity": 3
+        },
+        "gem": {
+            "id": 1,
+            "maxHealth": 100,
+            "heath": 100,
+            "loc": {
+                "x": 0,
+                "y": 3
+            },
+            "equipments": [],
+            "owner": {
+                "id": 0
+            },
+            "maxAction": 0,
+            "nowAction": 0,
+            "seeDistance": 0
+        },
+        "hasEnd": false
+    },
+    "others": [
+        {
+            "gamerId": 1,
+            "name": "CWaller",
+            "id": 429434366608970728,
+            "energyNum": 0,
+            "usedCard": {},
+            "baseNest": {
+                "card": {
+                    "id": 0,
+                    "type": null,
+                    "needEnergy": 0,
+                    "name": null,
+                    "skill": null,
+                    "header": null,
+                    "level": null,
+                    "maxHealth": 0,
+                    "defend": 0,
+                    "needBuildingNum": 0,
+                    "maxCapacity": 3,
+                    "limitEnergy": 3
+                },
+                "schedule": 0,
+                "loc": {
+                    "x": 12,
+                    "y": 19
+                },
+                "owner": {
+                    "id": 1
+                },
+                "allCat": {
+                    "allCats": []
+                },
+                "remainCapacity": 3
+            },
+            "hasEnd": false
+        }
+    ],
+    "blocks": [
+        {
+            "loc": {
+                "x": 0,
+                "y": 0
+            },
+            "building": null,
+            "type": "STONE",
+            "entity": null,
+            "canSee": true
+        },
+        {
+            "loc": {
+                "x": 0,
+                "y": 1
+            },
+            "building": null,
+            "type": "GRASS",
+            "entity": null,
+            "canSee": true
+        },
+        {
+            "loc": {
+                "x": 0,
+                "y": 2
+            },
+            "building": null,
+            "type": "RIVER",
+            "entity": null,
+            "canSee": true
+        },
+        {
+            "loc": {
+                "x": 1,
+                "y": 1
+            },
+            "building": null,
+            "type": "MOUNT",
+            "entity": null,
+            "canSee": true
+        }
+    ]
+}

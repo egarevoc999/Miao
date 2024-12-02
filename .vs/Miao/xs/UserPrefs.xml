@@ -1,8 +1,11 @@
 ﻿<Properties StartupConfiguration="{7942BDE3-358A-0734-5AA1-1D746202E46D}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Materials/Scripts/Grid.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Materials/Scripts/Scenes/LoadStaticUI.cs">
     <Files>
-      <File FileName="Assets/Materials/Scripts/TestGrid.cs" Line="6" Column="1" />
-      <File FileName="Assets/Materials/Scripts/Grid.cs" Line="16" Column="6" />
+      <File FileName="Assets/Materials/Scripts/Scenes/LoadScene.cs" Line="34" Column="13" />
+      <File FileName="Assets/Materials/Scripts/Scenes/JsonParser.cs" />
+      <File FileName="Assets/Resources/start_info.json" />
+      <File FileName="Assets/Materials/Scripts/Scenes/SceneInfo.cs" />
+      <File FileName="Assets/Materials/Scripts/Scenes/LoadStaticUI.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,10 +14,10 @@
             <Node name="Assets" expanded="True">
               <Node name="Materials" expanded="True">
                 <Node name="Scripts" expanded="True">
-                  <Node name="Provided Scripts" expanded="True" />
-                  <Node name="Scenes" expanded="True" />
+                  <Node name="Scenes" expanded="True">
+                    <Node name="LoadStaticUI.cs" selected="True" />
+                  </Node>
                   <Node name="Test" expanded="True" />
-                  <Node name="Grid.cs" selected="True" />
                 </Node>
               </Node>
             </Node>
@@ -25,7 +28,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="69081340-0c90-4c5f-9d1a-da3fe4e15b8d" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="649793b6-8dc6-4758-8f48-460b5ce65e1a" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

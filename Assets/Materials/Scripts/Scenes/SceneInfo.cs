@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using UnityEngine;
 
 [Serializable]
 public class SceneInfo
 {
     public PlayerInfo self;
     public List<PlayerInfo> others;
-    public List<List<Block>> blocks;
+    public List<Block> blocks;
 }
 
 [Serializable]
@@ -32,6 +33,29 @@ public class Location
     public int x;
     public int y;
     public int z;
+
+    public Location(int x, int y, int z)
+    {
+        this.x = x;
+        this.y = y;
+        this.z = z;
+    }
+
+    public Location(Vector3Int loc)
+    {
+        this.x = loc[0];
+        this.y = loc[1];
+        this.z = loc[2];
+    }
+
+    public override bool Equals(object obj)
+    {
+        return base.Equals(obj);
+    }
+    public override int GetHashCode()
+    {
+        return base.GetHashCode();
+    }
 }
 
 [Serializable]
@@ -103,9 +127,10 @@ public class Block
 {
     public Location loc;
     public Building building;
-    public BlockType type;
+    //public BlockType type;  // 无法解析匹配枚举
+    public String type;
     public Entity entity;
-    public bool visible;
+    public bool canSee;
 }
 
 [Serializable]
