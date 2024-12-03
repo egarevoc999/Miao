@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using System.Collections;
+using System.Collections.Generic;
 
 public class LoadStaticUI : MonoBehaviour
 {
@@ -12,6 +12,12 @@ public class LoadStaticUI : MonoBehaviour
 
     private PlayerInfo selfInfo;
     private bool isOtherListExpand;
+
+    public GameObject otherPlayerItem;  // 玩家预设体
+    public Transform contentTransform;  // 滚动条的content
+    public Sprite defaultAvatar;
+
+    private List<PlayerInfo> othersInfo;
 
     // Use this for initialization
     void Start()
@@ -34,6 +40,10 @@ public class LoadStaticUI : MonoBehaviour
         this.otherPlayersInfo.gameObject.SetActive(false);
         // 监听按钮事件
         this.otherPlayrsInfoIcon.GetComponent<Button>().onClick.AddListener(ToggleList);
+
+        // 获取并更新others玩家信息
+        othersInfo = parser.GetInfo().others;
+        UpdateOthersInfo();
     }
 
     private void ToggleList()
@@ -56,6 +66,31 @@ public class LoadStaticUI : MonoBehaviour
 
         int ev = Mathf.Clamp(selfInfo.energyNum, (int)selfEnergy.minValue, (int)selfEnergy.maxValue);
         this.selfEnergy.value = ev;
+    }
+
+    private void UpdateOthersInfo()
+    {
+        foreach(var player in othersInfo)
+        {
+            Debug.Log("add other player");
+            CreatePlayerItem(player);
+        }
+    }
+
+    private void CreatePlayerItem(PlayerInfo info)
+    {
+        // 实例化玩家
+        GameObject item = Instantiate(otherPlayerItem, contentTransform);
+
+        // 更新玩家名称子组件
+        TextMeshProUGUI name = item.GetComponentInChildren<TextMeshProUGUI>();
+        name.text = info.name;
+        Debug.Log("other player's name is " + name.text);
+
+        // 更新玩家头像子组件
+        Image avatar = item.GetComponentInChildren<Image>();
+        avatar.sprite = defaultAvatar;
+        // TODO 更新其他玩家头像
     }
 
     // Update is called once per frame
