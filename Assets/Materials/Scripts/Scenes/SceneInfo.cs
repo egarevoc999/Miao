@@ -80,7 +80,7 @@ public class Owner
 public class Card
 {
     public int id;  // 一场游戏中对每张卡牌的编号
-    public string type;  // 同种类型卡牌的唯一编号，可以有多张卡牌，用id标识
+    public long type;  // 同种类型卡牌的唯一编号，可以有多张卡牌，用id标识
     public int needEnergy;
     public string name;
     public string skill;
@@ -120,6 +120,7 @@ public class Entity
     public int maxAction;
     public int nowAction;
     public int seeDistance;
+    public Card card;  // 召唤实体所使用的卡牌信息
 }
 
 [Serializable]
